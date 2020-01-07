@@ -170,8 +170,7 @@
   @media screen and (max-width: 870px) {
     .estate {
       display: block;
-      margin: 0 auto;
-      padding-bottom: 64px; }
+      margin: 0 auto; }
       .estate__info {
         width: 100%;
         margin-top: 48px; } }
@@ -348,7 +347,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-x: hidden; }
 
 .wrap {
   position: relative;
@@ -483,14 +483,18 @@ body {
   font-size: 14px;
   color: #9fadc2; }
 
-.wowUp {
+.wowRight,
+.wowLeft,
+.wowTop {
   position: relative;
-  -webkit-animation-name: animation;
-          animation-name: animation;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s; }
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
-@-webkit-keyframes animation {
+.wowRight {
+  -webkit-animation-name: goRight;
+          animation-name: goRight; }
+
+@-webkit-keyframes goRight {
   from {
     left: -500px;
     opacity: 0; }
@@ -498,12 +502,52 @@ body {
     left: 0;
     opacity: 1; } }
 
-@keyframes animation {
+@keyframes goRight {
   from {
     left: -500px;
     opacity: 0; }
   to {
     left: 0;
+    opacity: 1; } }
+
+.wowLeft {
+  -webkit-animation-name: goLeft;
+          animation-name: goLeft; }
+
+@-webkit-keyframes goLeft {
+  from {
+    right: -500px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+
+@keyframes goLeft {
+  from {
+    right: -500px;
+    opacity: 0; }
+  to {
+    right: 0;
+    opacity: 1; } }
+
+.wowTop {
+  -webkit-animation-name: goTop;
+          animation-name: goTop; }
+
+@-webkit-keyframes goTop {
+  from {
+    bottom: -500px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
+@keyframes goTop {
+  from {
+    bottom: -500px;
+    opacity: 0; }
+  to {
+    bottom: 0;
     opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
