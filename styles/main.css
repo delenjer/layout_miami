@@ -433,6 +433,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .form__item {
+    display: block;
     margin-bottom: 16px; }
   .form__input {
     display: block;
