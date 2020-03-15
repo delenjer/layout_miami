@@ -20,7 +20,8 @@
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    z-index: 2; }
   .header__top-text {
     display: block;
     letter-spacing: 2px;
@@ -32,9 +33,20 @@
     transition: hover 0.5s; }
     .header__top-text:hover {
       color: #9fadc2; }
+  .header__content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    @media screen and (max-width: 780px) {
+      .header__content {
+        height: 100%; } }
   .header .header-title {
     position: relative;
-    margin: 350px 0 85px;
+    margin-bottom: 85px;
     font-weight: bold;
     font-size: 60px;
     color: #fff;
@@ -94,7 +106,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
     background-color: #0075ff; }
     .nav__list {
       display: block;
