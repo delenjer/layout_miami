@@ -299,8 +299,7 @@ body {
   opacity: 0.8; }
 
 .section {
-  position: relative;
-  height: 100vh; }
+  position: relative; }
 
 .title {
   font-size: 24px;
