@@ -23,18 +23,17 @@
   .header__content {
     width: 299px; }
   .header__title {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 36px;
     font-weight: 600;
-    margin-bottom: 10px;
-    white-space: nowrap; }
+    margin-bottom: 10px; }
     @media screen and (max-width: 359px) {
       .header__title {
         font-size: 20px;
         white-space: normal; } }
   .header__text {
     font-size: 16px; }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .header__title {
       font-size: 20px;
       line-height: 25px; }
@@ -57,7 +56,7 @@
     width: 238px; }
   .control__tv {
     margin-top: 51px; }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .control {
       padding-top: 20px; }
       .control__tv {
@@ -90,7 +89,7 @@
   @media screen and (max-height: 625px) {
     .info__img {
       height: 360px; } }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .info {
       padding-top: 30px; }
       .info__img {
@@ -126,11 +125,10 @@
   .sub__text {
     margin-bottom: 5px; }
   .sub__title {
+    width: 289px;
     font-size: 36px;
     font-weight: 600;
-    line-height: 43px;
-    white-space: nowrap;
-    margin-top: 120px; }
+    line-height: 43px; }
   .sub__description {
     width: 291px;
     margin-top: 10px;
@@ -142,7 +140,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: lowercase;
-    margin-top: 70px; }
+    padding-top: 40px; }
   .sub__btn {
     margin-top: 16px; }
   .sub__info {
@@ -165,28 +163,36 @@
     transition: color 0.3s; }
     .sub__detailed:hover {
       color: #fff; }
-  @media screen and (max-height: 630px) {
+  @media screen and (max-height: 600px) {
     .sub__title {
       font-size: 25px;
       line-height: 25px; }
     .sub__text {
       font-size: 12px; }
     .sub__description {
+      font-size: 10px; }
+    .sub__price {
+      font-size: 16px;
+      padding-top: 40px; }
+    .sub__info {
+      width: 100%;
+      font-size: 10px; }
+    .sub__detailed {
       font-size: 10px; } }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .sub {
       padding: 15px 0; }
       .sub__title {
+        width: 100%;
         font-size: 17px;
-        line-height: 20px;
-        margin-top: 0; }
+        line-height: 20px; }
       .sub__text {
         margin-bottom: 0; }
       .sub__description {
-        margin-top: 0; }
+        width: 100%;
+        margin-top: 5px; }
       .sub__price {
-        font-size: 12px;
-        margin-top: 20px; }
+        font-size: 12px; }
       .sub__btn {
         margin-top: 12px; }
       .sub__info {
@@ -200,32 +206,24 @@
 
 .sub-middle {
   border: 8px solid #23c3b2; }
-  .sub-middle .sub__title {
-    margin-top: 99px; }
-  @media screen and (max-height: 420px) {
-    .sub-middle .sub__title {
-      margin-top: 0; }
-    .sub-middle .sub__price {
-      margin-top: 10px; } }
-  @media screen and (max-width: 330px) {
-    .sub-middle {
-      border: none;
-      padding: 0; }
-      .sub-middle .wrapper {
-        border: 8px solid #23c3b2;
-        height: 100%; } }
 
-.sub-max .sub__title {
-  margin-top: 50px; }
+.sub-box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
-.sub-max .sub__price {
-  margin-top: 32px; }
+.box-top {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }
 
-@media screen and (max-height: 420px) {
-  .sub-max .sub__title {
-    margin-top: 0; }
-  .sub-max .sub__price {
-    margin-top: 10px; } }
+.box-middle {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
 
 .present {
   padding-top: 20px;
@@ -239,7 +237,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .present__text {
       font-size: 12px; }
     .present__discount {
@@ -249,7 +247,7 @@
 .footer {
   height: 100vh;
   background-color: #101010;
-  padding-top: 80px; }
+  padding-top: 10px; }
   @media screen and (max-height: 420px) {
     .footer {
       height: 100%;
@@ -264,6 +262,8 @@
   margin-top: 30px; }
   .catch__container {
     margin-bottom: 40px; }
+    .catch__container:last-of-type {
+      margin-bottom: 20px; }
   .catch__title {
     font-size: 20px;
     font-weight: 600;
@@ -271,13 +271,16 @@
   .catch__text {
     font-size: 15px;
     line-height: 24px; }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .catch {
       margin-top: 20px; }
       .catch__container {
-        margin-bottom: 15px; }
+        margin-bottom: 10px; }
+        .catch__container:last-of-type {
+          margin-bottom: 0; }
       .catch__title {
-        font-size: 12px; }
+        font-size: 12px;
+        margin-bottom: 2px; }
       .catch__text {
         font-size: 10px;
         line-height: 17px; } }
@@ -302,6 +305,9 @@ body {
   margin: auto;
   padding: 0 20px;
   z-index: 2; }
+  @media screen and (min-width: 780px) {
+    .wrapper {
+      width: 500px; } }
   @media screen and (max-width: 359px) {
     .wrapper {
       width: 100%;
@@ -326,7 +332,7 @@ body {
     .title {
       font-size: 20px;
       white-space: normal; } }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .title {
       font-size: 16px;
       line-height: 20px;
@@ -355,7 +361,7 @@ body {
     .tv {
       width: 100%;
       padding-left: 10px; } }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .tv {
       width: 78vmin;
       height: 45vmin; } }
@@ -375,7 +381,7 @@ body {
   transition: background-color 0.3s; }
   .btn:hover {
     background-color: cyan; }
-  @media screen and (max-height: 420px) {
+  @media screen and (max-height: 500px) {
     .btn {
       width: 100px;
       padding: 10px 0;
