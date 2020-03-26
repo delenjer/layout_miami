@@ -229,7 +229,7 @@
       flex-basis: 50%; }
 
 .present {
-  padding-top: 20px;
+  padding-top: 40px;
   background-color: #101010; }
   .present__description {
     line-height: 20px; }
@@ -241,20 +241,22 @@
     background-size: contain;
     background-position: center; }
   @media screen and (max-height: 500px) {
-    .present__text {
-      font-size: 12px; }
-    .present__discount {
-      height: 50vmin;
-      background-size: contain; } }
+    .present {
+      padding-top: 10px; }
+      .present__text {
+        font-size: 12px; }
+      .present__discount {
+        height: 50vmin;
+        background-size: contain; } }
 
 .footer {
   height: 100vh;
   background-color: #101010;
-  padding-top: 10px; }
+  padding-top: 40px; }
   @media screen and (max-height: 420px) {
     .footer {
       height: 100%;
-      padding: 20px 0; } }
+      padding: 10px 0; } }
 
 .catch {
   display: grid;
